@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		xmlns:app = "http://schemas.android.com/apk/res-auto"
+		xmlns:tools = "http://schemas.android.com/tools"
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent"
+		tools:context = ".MainActivity" >
+
+	<ImageView
+			android:id = "@+id/img_end"
+			android:layout_width = "match_parent"
+			android:layout_height = "match_parent"
+			android:scaleType = "centerCrop"
+			android:src = "@drawable/end" />
+
+	<com.timedancing.easyfirewall.view.RevealFrameLayout
+
+			android:layout_width = "match_parent"
+			android:layout_height = "match_parent" >
+
+		<ImageView
+				android:id = "@+id/img_start"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:scaleType = "centerCrop"
+				android:src = "@drawable/start" />
+
+	</com.timedancing.easyfirewall.view.RevealFrameLayout >
+
+	<ImageButton
+			android:id = "@+id/img_setting"
+			android:layout_width = "25dp"
+			android:layout_height = "25dp"
+			android:layout_alignParentRight = "true"
+			android:layout_marginRight = "20dp"
+			android:layout_marginTop = "10dp"
+			android:background = "@drawable/selector_btn_setting" />
+
+	<View
+			android:id = "@+id/blackMask"
+			android:layout_width = "match_parent"
+			android:layout_height = "match_parent"
+			android:background = "#a4000000" />
+
+	<com.timedancing.easyfirewall.view.RippleBackground
+			android:id = "@+id/rippleView"
+			android:layout_width = "200dp"
+			android:layout_height = "200dp"
+			android:layout_alignParentBottom = "true"
+			android:layout_centerHorizontal = "true"
+			android:layout_marginBottom = "40dp"
+			app:rb_color = "@color/colorBtnGreen"
+			app:rb_color_selected = "@color/colorBtnRed"
+			app:rb_duration = "6000"
+			app:rb_radius = "32dp"
+			app:rb_rippleAmount = "4"
+			app:rb_scale = "3" >
+
+		<TextView
+				android:id = "@+id/btn_run"
+				android:layout_width = "64dp"
+				android:layout_height = "64dp"
+				android:layout_centerInParent = "true"
+				android:background = "@drawable/selector_begin_button"
+				android:gravity = "center"
+				android:text = "@string/start"
+				android:textColor = "#f2f2f6"
+				android:textSize = "24dp" />
+
+	</com.timedancing.easyfirewall.view.RippleBackground >
+
+	<com.timedancing.easyfirewall.view.TipsLayout
+			android:id = "@+id/tipsLayout"
+			android:layout_width = "250dp"
+			android:layout_height = "67dp"
+			android:layout_above = "@id/rippleView"
+			android:layout_centerHorizontal = "true"
+			android:layout_marginBottom = "-50dp"
+			app:tl_border_color = "#feffff"
+			app:tl_border_style = "dash" >
+
+		<TextView
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:gravity = "center"
+				android:lineSpacingMultiplier = "1.2"
+				android:padding = "5dp"
+				android:text = "@string/tips"
+				android:textColor = "#feffff"
+				android:textSize = "14sp" />
+	</com.timedancing.easyfirewall.view.TipsLayout >
+
+
+</RelativeLayout >

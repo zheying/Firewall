@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+	<color name = "colorPrimary" >#040c0e</color >
+	<color name = "colorPrimaryDark" >#030404</color >
+	<color name = "colorAccent" >#FF4081</color >
+
+	<color name = "numberPressColor" >#96b6b6b6</color >
+
+	<color name = "rippelColor" >#0099CC</color >
+
+	<color name = "colorBtnGreen" >#0dc3e4</color >
+	<color name = "colorBtnRed" >#fb0009</color >
+
+	<color name = "tipslayout_border_color" >#ffffff</color >
+
+	<color name = "background_color" >#01131a</color >
+
+	<color name = "setting_text_color" >#b1bcc0</color >
+	<color name = "setting_divider_color" >#062a34</color >
+</resources >

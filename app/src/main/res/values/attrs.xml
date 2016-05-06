@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+	<declare-styleable name = "RippleBackground" >
+		<attr name = "rb_color" format = "color" />
+		<attr name = "rb_color_selected" format = "color" />
+		<attr name = "rb_strokeWidth" format = "dimension" />
+		<attr name = "rb_radius" format = "dimension" />
+		<attr name = "rb_duration" format = "integer" />
+		<attr name = "rb_rippleAmount" format = "integer" />
+		<attr name = "rb_scale" format = "float" />
+		<attr name = "rb_type" format = "enum" >
+			<enum name = "fillRipple" value = "0" />
+			<enum name = "strokeRipple" value = "1" />
+		</attr >
+	</declare-styleable >
+
+	<declare-styleable name = "TipsLayout" >
+		<attr name = "tl_border_color" format = "color" />
+		<attr name = "tl_border_style" format = "enum" >
+			<enum name = "none" value = "0" />
+			<enum name = "dash" value = "1" />
+		</attr >
+		<attr name = "tl_border_width" format = "dimension" />
+		<attr name = "tl_triangle_width" format = "dimension" />
+		<attr name = "tl_triangle_height" format = "dimension" />
+		<attr name = "tl_dash_width" format = "dimension" />
+		<attr name = "tl_dash_gap" format = "dimension" />
+	</declare-styleable >
+
+	<declare-styleable name = "SettingItemView" >
+		<attr name = "siv_title" format = "string" />
+		<attr name = "siv_checked" format = "boolean" />
+		<attr name = "siv_check_visibility" format = "enum" >
+			<enum name = "invisible" value = "0" />
+			<enum name = "visible" value = "1" />
+		</attr >
+	</declare-styleable >
+</resources >

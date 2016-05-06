@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+		package = "com.timedancing.easyfirewall"
+		xmlns:android = "http://schemas.android.com/apk/res/android" >
+
+	<uses-permission android:name = "android.permission.INTERNET" />
+	<uses-permission android:name = "android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name = "android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name = "android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name = "android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name = "android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name = "android.permission.ACCESS_FINE_LOCATION" />
+
+	<application
+			android:name = ".app.GlobalApplication"
+			android:allowBackup = "true"
+			android:icon = "@mipmap/ic_launcher"
+			android:label = "@string/app_name"
+			android:supportsRtl = "true"
+			android:theme = "@style/AppTheme" >
+
+		<!-- Activity -->
+
+		<activity
+				android:name = ".activity.GuidePageActivity"
+				android:label = "@string/app_name"
+				android:noHistory = "true"
+				android:screenOrientation = "portrait"
+				android:theme = "@style/AppTheme.NoActionBar" >
+			<intent-filter >
+				<action android:name = "android.intent.action.MAIN" />
+
+				<category android:name = "android.intent.category.LAUNCHER" />
+			</intent-filter >
+		</activity >
+
+		<activity
+				android:name = ".activity.MainActivity"
+				android:label = "@string/app_name"
+				android:noHistory = "false"
+				android:screenOrientation = "portrait"
+				android:theme = "@style/AppTheme.NoActionBar" >
+		</activity >
+
+		<activity
+				android:name = ".activity.UnlockActivity"
+				android:noHistory = "true"
+				android:screenOrientation = "portrait"
+				android:theme = "@style/AppTheme.NoActionBar" >
+		</activity >
+
+		<activity
+				android:name = ".activity.SettingActivity"
+				android:screenOrientation = "portrait"
+				android:theme = "@style/AppTheme.NoActionBar" />
+
+		<activity
+				android:name = ".activity.FeedbackActivity"
+				android:screenOrientation = "portrait"
+				android:theme = "@style/AppTheme.NoActionBar" />
+
+		<activity
+				android:name = ".activity.AboutActivity"
+				android:screenOrientation = "portrait"
+				android:theme = "@style/AppTheme.NoActionBar" />
+
+		<!-- Service -->
+
+		<service
+				android:name = ".core.service.FirewallVpnService"
+				android:permission = "android.permission.BIND_VPN_SERVICE" >
+			<intent-filter >
+				<action android:name = "android.net.VpnService" />
+			</intent-filter >
+		</service >
+
+		<!-- Receiver -->
+
+		<receiver android:name = ".receiver.BootBroadcastReceiver" >
+			<intent-filter >
+				<action android:name = "android.intent.action.BOOT_COMPLETED" />
+			</intent-filter >
+		</receiver >
+
+		<receiver
+				android:name = ".receiver.PreventUninstallDeviceAdminReceiver"
+				android:description = "@string/admin_receiver_description"
+				android:permission = "android.permission.BIND_DEVICE_ADMIN" >
+			<meta-data
+					android:name = "android.app.device_admin"
+					android:resource = "@xml/device_admin" />
+			<intent-filter >
+				<action android:name = "android.app.action.DEVICE_ADMIN_ENABLED" />
+			</intent-filter >
+		</receiver >
+
+		<!-- Meta Data-->
+		<meta-data
+				android:name = "TA_APPKEY"
+				android:value = "AIC583V5RJAB" />
+		<meta-data
+				android:name = "InstallChannel"
+				android:value = "${CHANNEL_NAME}" />
+	</application >
+
+</manifest >

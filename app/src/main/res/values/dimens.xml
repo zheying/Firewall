@@ -1,0 +1,19 @@
+<resources >
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name = "activity_horizontal_margin" >16dp</dimen >
+	<dimen name = "activity_vertical_margin" >16dp</dimen >
+	<dimen name = "fab_margin" >16dp</dimen >
+
+	<dimen name = "rippleStrokeWidth" >2dp</dimen >
+	<dimen name = "rippleRadius" >64dp</dimen >
+
+	<dimen name = "tl_border_width" >1dp</dimen >
+	<dimen name = "tl_triangle_width" >16dp</dimen >
+	<dimen name = "tl_triangle_height" >10dp</dimen >
+	<dimen name = "tl_dash_width" >4dp</dimen >
+	<dimen name = "tl_dash_gap" >2dp</dimen >
+
+	<dimen name = "guide_indicator" >48dp</dimen >
+	<dimen name = "guide_top_padding" >48dp</dimen >
+
+</resources >

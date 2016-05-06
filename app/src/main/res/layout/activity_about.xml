@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		xmlns:app = "http://schemas.android.com/apk/res-auto"
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent"
+		android:background = "@color/background_color"
+		android:fitsSystemWindows = "true" >
+
+	<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "match_parent"
+			android:gravity = "center_horizontal"
+			android:orientation = "vertical" >
+
+		<android.support.design.widget.AppBarLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:elevation = "0dp"
+				android:theme = "@style/AppTheme.AppBarOverlay" >
+
+			<android.support.v7.widget.Toolbar
+					android:id = "@+id/toolbar"
+					android:layout_width = "match_parent"
+					android:layout_height = "?attr/actionBarSize"
+					android:background = "@android:color/transparent"
+					app:popupTheme = "@style/AppTheme.PopupOverlay" />
+
+		</android.support.design.widget.AppBarLayout >
+
+		<ImageView
+				android:layout_width = "90dp"
+				android:layout_height = "90dp"
+				android:layout_marginTop = "68dp"
+				android:src = "@drawable/icon" />
+
+		<TextView
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:layout_marginTop = "29dp"
+				android:text = "@string/app_name"
+				android:textColor = "#DFE9ED"
+				android:textSize = "15dp" />
+
+		<TextView
+				android:id = "@+id/tv_version"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:layout_marginTop = "10dp"
+				android:text = "@string/about_version"
+				android:textColor = "#4EB6C2" />
+
+		<TextView
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:layout_marginLeft = "37dp"
+				android:layout_marginRight = "37dp"
+				android:layout_marginTop = "30dp"
+				android:lineSpacingMultiplier = "1.3"
+				android:text = "@string/about_description"
+				android:textColor = "#DFE9ED"
+				android:textSize = "13dp" />
+
+		<TextView
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:layout_marginLeft = "37dp"
+				android:layout_marginRight = "37dp"
+				android:layout_marginTop = "29dp"
+				android:text = "@string/about_extra_info"
+				android:textColor = "#246b73"
+				android:textSize = "13dp" />
+
+	</LinearLayout >
+
+</android.support.design.widget.CoordinatorLayout >

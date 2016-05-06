@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		xmlns:app = "http://schemas.android.com/apk/res-auto"
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent"
+		android:background = "@color/background_color"
+		android:fitsSystemWindows = "true"
+		android:orientation = "vertical" >
+
+	<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "match_parent"
+			android:orientation = "vertical" >
+
+		<android.support.design.widget.AppBarLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:theme = "@style/AppTheme.AppBarOverlay" >
+
+			<android.support.v7.widget.Toolbar
+					android:id = "@+id/toolbar"
+					android:layout_width = "match_parent"
+					android:layout_height = "?attr/actionBarSize"
+					android:background = "@android:color/transparent"
+					android:elevation = "0dp"
+					app:popupTheme = "@style/AppTheme.PopupOverlay" >
+
+				<LinearLayout
+						android:layout_width = "match_parent"
+						android:layout_height = "match_parent"
+						android:gravity = "center_vertical|right"
+						android:orientation = "horizontal" >
+
+					<TextView
+							android:id = "@+id/tv_submit"
+							android:layout_width = "wrap_content"
+							android:layout_height = "wrap_content"
+							android:padding = "10dp"
+							android:text = "提交"
+							android:textColor = "@android:color/white"
+							android:textSize = "18dp" />
+				</LinearLayout >
+			</android.support.v7.widget.Toolbar >
+
+		</android.support.design.widget.AppBarLayout >
+
+		<EditText
+				android:id = "@+id/edit_advise"
+				android:layout_width = "match_parent"
+				android:layout_height = "136dp"
+				android:layout_marginLeft = "10dp"
+				android:layout_marginRight = "10dp"
+				android:layout_marginTop = "20dp"
+				android:background = "@drawable/rect_round_edittext"
+				android:gravity = "top"
+				android:hint = "@string/feed_edit_advise_text_hint"
+				android:padding = "10dp"
+				android:textColor = "#373e41"
+				android:textColorHint = "#929a9e"
+				android:textSize = "13dp" />
+
+		<EditText
+				android:id = "@+id/edit_connect"
+				android:layout_width = "match_parent"
+				android:layout_height = "44dp"
+				android:layout_gravity = "center_vertical"
+				android:layout_marginLeft = "10dp"
+				android:layout_marginRight = "10dp"
+				android:layout_marginTop = "20dp"
+				android:background = "@drawable/rect_round_edittext"
+				android:hint = "@string/feed_edit_connect_text_hint"
+				android:padding = "10dp"
+				android:textColor = "#373e41"
+				android:textColorHint = "#929a9e"
+				android:textSize = "13dp" />
+
+	</LinearLayout >
+
+
+</android.support.design.widget.CoordinatorLayout >

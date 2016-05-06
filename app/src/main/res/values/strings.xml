@@ -1,0 +1,40 @@
+<resources >
+	<string name = "app_name" >TD网页防火墙</string >
+	<string name = "action_settings" >Settings</string >
+
+	<string name = "set_password" >请设置4位数字密码</string >
+	<string name = "confirm_password" >请确认密码</string >
+	<string name = "set_password_again" >两次密码不匹配，请重新设置密码</string >
+	<string name = "input_password" >请输入密码</string >
+	<string name = "wrong_password" >密码错误！</string >
+
+	<string name = "start" >开启</string >
+	<string name = "shutdown" >关闭</string >
+	<string name = "tips" >无论何种浏览器，何种内置网页，网站防火墙都会保护你远离恶意网址</string >
+
+	<string name = "block_title" >该页面有风险，已被拦截</string >
+
+	<string name = "setting" >设置</string >
+
+	<string name = "setting_run_when_boot_completed" >开机启动</string >
+	<string name = "setting_prevent_uninstall" >预防卸载</string >
+	<string name = "setting_feedback" >意见反馈</string >
+	<string name = "setting_about" >关于</string >
+
+	<string name = "admin_receiver_description" >预防TD网页防火墙被未授权用户卸载。</string >
+	<string name = "admin_request_description" >预防TD网页防火墙被未授权用户卸载</string >
+
+	<string name = "feed_edit_advise_text_hint" >请把你们的宝贵意见反馈给我们~</string >
+	<string name = "feed_edit_connect_text_hint" >请留下你的联系方式（QQ、邮箱或电话号码）</string >
+
+	<string name = "warning_when_disable_admin_manager" >警告：如果停止此选项，任何人都可以卸载TD网页防火墙，将无法保障您的上网安全。</string >
+
+	<string name = "preparing" >正在准备……</string >
+	<string name = "updating_config" >正在更新配置……</string >
+
+	<string name = "about_version" >当前版本：%1$s</string >
+	<string name = "about_description" >TD网页防火墙利用一个简单的VPN，深入系统层面，无论是系统内置浏览器，第三方浏览器，还是APP内置浏览器，都可以帮你拦截掉所有的恶意网址，钓鱼网站。</string >
+	<string name = "about_extra_info" >注：恶意网址库来源于http://www.mwsl.org.cn</string >
+
+	<string name = "guide_start_right_now" >立即体验</string >
+</resources >

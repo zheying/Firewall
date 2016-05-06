@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		xmlns:app = "http://schemas.android.com/apk/res-auto"
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent"
+		android:background = "@color/background_color"
+		android:fitsSystemWindows = "true"
+		android:orientation = "vertical" >
+
+	<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "match_parent"
+			android:orientation = "vertical" >
+
+		<android.support.design.widget.AppBarLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:elevation = "0dp"
+				android:theme = "@style/AppTheme.AppBarOverlay" >
+
+			<android.support.v7.widget.Toolbar
+					android:id = "@+id/toolbar"
+					android:layout_width = "match_parent"
+					android:layout_height = "?attr/actionBarSize"
+					android:background = "@android:color/transparent"
+					app:popupTheme = "@style/AppTheme.PopupOverlay" />
+
+		</android.support.design.widget.AppBarLayout >
+
+		<com.timedancing.easyfirewall.view.SettingItemView
+				android:id = "@+id/siv_run_auto"
+				android:layout_width = "match_parent"
+				android:layout_height = "50dp"
+				android:layout_marginLeft = "30dp"
+				android:layout_marginRight = "30dp"
+				android:layout_marginTop = "30dp"
+				app:siv_checked = "true"
+				app:siv_title = "@string/setting_run_when_boot_completed" />
+
+		<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:layout_marginLeft = "30dp"
+				android:layout_marginRight = "30dp"
+				android:background = "@color/setting_divider_color" />
+
+		<com.timedancing.easyfirewall.view.SettingItemView
+				android:id = "@+id/siv_prevent_uninstall"
+				android:layout_width = "match_parent"
+				android:layout_height = "50dp"
+				android:layout_marginLeft = "30dp"
+				android:layout_marginRight = "30dp"
+				app:siv_title = "@string/setting_prevent_uninstall" />
+
+		<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:layout_marginLeft = "30dp"
+				android:layout_marginRight = "30dp"
+				android:background = "@color/setting_divider_color" />
+
+		<com.timedancing.easyfirewall.view.SettingItemView
+				android:id = "@+id/siv_feedback"
+				android:layout_width = "match_parent"
+				android:layout_height = "50dp"
+				android:layout_marginLeft = "30dp"
+				android:layout_marginRight = "30dp"
+				app:siv_check_visibility = "invisible"
+				app:siv_title = "@string/setting_feedback" >
+		</com.timedancing.easyfirewall.view.SettingItemView >
+
+		<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:layout_marginLeft = "30dp"
+				android:layout_marginRight = "30dp"
+				android:background = "@color/setting_divider_color" />
+
+		<com.timedancing.easyfirewall.view.SettingItemView
+				android:id = "@+id/siv_about"
+				android:layout_width = "match_parent"
+				android:layout_height = "50dp"
+				android:layout_marginLeft = "30dp"
+				android:layout_marginRight = "30dp"
+				app:siv_check_visibility = "invisible"
+				app:siv_title = "@string/setting_about" />
+
+		<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:layout_marginLeft = "30dp"
+				android:layout_marginRight = "30dp"
+				android:background = "@color/setting_divider_color" />
+
+	</LinearLayout >
+
+</android.support.design.widget.CoordinatorLayout >
